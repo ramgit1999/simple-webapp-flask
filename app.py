@@ -2,9 +2,14 @@ import os
 from flask import Flask
 app = Flask(__name__)
 
+...
+...
+
+color = os.environ.get('APP_COLOR')
+
 @app.route("/")
 def main():
-    return "Welcome!"
+    return "Welcome!" 
 
 @app.route('/how are you')
 def hello():
